@@ -1,0 +1,1 @@
+:framerate=30;startseconds=20; startcounter=((startseconds+1)*framerate)-1;minutes=floor((startcounter-time)/framerate/60)%60; seconds=floor((startcounter-time)/framerate)%60;return Text(string.format("%02.f",minutes)..":"..string.format("%02.f",seconds));
